@@ -1,0 +1,12 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav opened mode="side">Start content</mat-sidenav>
+  <mat-sidenav *ngIf="condition" opened mode="side" position="end"
+    >End content</mat-sidenav
+  >
+  <mat-sidenav *ngIf="!condition" opened mode="side" position="end"
+    >End content 2</mat-sidenav
+  >
+  <p>Implicit main content</p>
+
+  <button (click)="condition=!condition">Toggle</button>
+</mat-sidenav-container>
